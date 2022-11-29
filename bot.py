@@ -9,8 +9,8 @@ if __name__ == "__main__":
     DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
     COMMAND_PREFIX = os.getenv('COMMAND_PREFIX')
     bot = commands.Bot(command_prefix=COMMAND_PREFIX, intents = discord.Intents.all())
-
-    INVITE_LINK = os.getenv('INVITE_LINK')   
+    CLIENT_ID = os.getenv('CLIENT_ID')
+    INVITE_LINK = os.getenv('OAUTH_LINK')
 
     @bot.event
     async def on_ready():
