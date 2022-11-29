@@ -5,12 +5,14 @@ import dotenv
 
 
 if __name__ == "__main__":
+    
     dotenv.load_dotenv()
     DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
     COMMAND_PREFIX = os.getenv('COMMAND_PREFIX')
-    bot = commands.Bot(command_prefix=COMMAND_PREFIX, intents = discord.Intents.all())
     CLIENT_ID = os.getenv('CLIENT_ID')
-    INVITE_LINK = os.getenv('OAUTH_LINK')
+    INVITE_LINK = os.getenv('INVITE_LINK')
+    
+    bot = commands.Bot(command_prefix=COMMAND_PREFIX, intents = discord.Intents.all())
 
     @bot.event
     async def on_ready():
