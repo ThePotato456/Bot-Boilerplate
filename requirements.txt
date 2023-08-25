@@ -1,5 +1,4 @@
 setuptools
 wheel
-py-cord==2.0.0
-py-cord[voice]==2.0.0
-dotenv
+py-cord
+py-cord[voice]
