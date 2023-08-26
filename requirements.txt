@@ -1,4 +1,13 @@
-setuptools
-wheel
 py-cord
 py-cord[voice]
+yt-dlp
+python-dotenv
+openai
+requests
+chat-exporter
+bs4
+google
+aiodns
+brotlipy
+cchardet
+msgspec
